@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simply Spotless Help System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #00274d;
+      color: #a4e300;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #003366;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #a4e300;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+    }
+    h2 {
+      color: #00274d;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    footer {
+      background-color: #00274d;
+      color: #a4e300;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Simply Spotless Help System</h1>
+  <p>Your guide to using the Simply Spotless website</p>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#services">Services Page</a>
+  <a href="#form">Request Form</a>
+  <a href="#faq">FAQ</a>
+  <a href="#troubleshooting">Troubleshooting</a>
+</nav>
+
+<main>
+  <section id="overview" class="section">
+    <h2>Website Overview</h2>
+    <p>This software is designed to assist user to schedule their desired cleaning service.</p>
+    <p>The Simply Spotless website allows users to view available cleaning services and request professional cleaning using a simple online form. The site is structured as follows:</p>
+    <ul>
+      <li><strong>Header:</strong> Contains the company name and slogan.</li>
+      <li><strong>Navigation Bar:</strong> Links to Services and Request Form.</li>
+      <li><strong>Hero Image:</strong> A banner image with a key message.</li>
+      <li><strong>Services Section:</strong> Detailed list of services offered.</li>
+      <li><strong>Request Form:</strong> For users to submit cleaning requests.</li>
+    </ul>
+    <img src="screenshots/homepage.png" alt="Homepage Screenshot">
+  </section>
+
+  <section id="services" class="section">
+    <h2>Using the Services Page</h2>
+    <p>The Services section highlights the various cleaning services offered by Simply Spotless. Each service is displayed in a card layout for quick readability.</p>
+    <p>Hovering over a service card will highlight it, giving the user a visual cue.</p>
+    <img src="screenshots/services_section.png" alt="Services Section Screenshot">
+  </section>
+
+  <section id="form" class="section">
+    <h2>Filling Out the Request Form</h2>
+    <p>To request a service, navigate to the bottom of the website or click "Request Service" from the navigation bar. Fill in the required fields:</p>
+    <ul>
+      <li><strong>Your Name</strong></li>
+      <li><strong>Your Email</strong></li>
+      <li><strong>Your Phone Number</strong></li>
+      <li><strong>Service Details</strong></li>
+    </ul>
+    <p>Click the <strong>Submit Request</strong> button to send your form. You will receive a confirmation email shortly after submission.</p>
+    <img src="screenshots/request_form.png" alt="Request Form Screenshot">
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Frequently Asked Questions</h2>
+    <h4>What happens after I submit the form?</h4>
+    <p>Our team will contact you within 24 hours to confirm your service request and schedule a time.</p>
+
+    <h4>Can I request multiple services at once?</h4>
+    <p>Yes. You can detail all your cleaning needs in the message box of the request form.</p>
+
+    <h4>Do I need to be home during the cleaning?</h4>
+    <p>No. As long as we have access to the premises, our team can carry out the service.</p>
+  </section>
+
+  <section id="troubleshooting" class="section">
+    <h2>Troubleshooting Common Issues</h2>
+    <h4>Issue: Form not submitting</h4>
+    <p>Ensure all required fields are filled. Refresh the page and try again. If the issue persists, email support@simplyspotless.com.</p>
+
+    <h4>Issue: I didn't receive a confirmation email</h4>
+    <p>Check your spam folder. If it's not there, contact our support team.</p>
+
+    <h4>Issue: Page not loading correctly</h4>
+    <p>Try clearing your browser cache or opening the site in a different browser.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Simply Spotless Help System | For assistance, contact support@simplyspotless.com
+</footer>
+
+</body>
+</html>
