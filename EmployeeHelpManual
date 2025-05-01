@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply Spotless Employee Portal - Help Manual</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      background-color: #00274d;
+      color: #a4e300;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin: 20px 0;
+    }
+    nav a {
+      margin-right: 15px;
+      color: #00274d;
+      text-decoration: underline;
+    }
+    h2 {
+      color: #00274d;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simply Spotless Employee Portal</h1>
+    <p>Online Help Manual</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#schedule">Viewing Your Schedule</a>
+    <a href="#supplies">Checking Needed Supplies</a>
+    <a href="#faq">FAQs & Troubleshooting</a>
+  </nav>
+
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>The Simply Spotless Employee Portal allows employees to view their daily cleaning schedule, assess the condition of properties, and check what supplies are required for each job.</p>
+    <img src="screenshots/overview.png" alt="Overview of Employee Portal" />
+  </section>
+
+  <section id="schedule">
+    <h2>Viewing Your Schedule</h2>
+    <p>To view your assigned schedule:</p>
+    <ol>
+      <li>Go to the top navigation menu and click on <strong>Schedule</strong>.</li>
+      <li>Review the table displaying Date, Time, Client Name, Service Type, and Property Condition.</li>
+    </ol>
+    <img src="screenshots/schedule.png" alt="Cleaning Schedule Screenshot" />
+  </section>
+
+  <section id="supplies">
+    <h2>Checking Needed Supplies</h2>
+    <p>To check what you need to bring:</p>
+    <ol>
+      <li>Click on <strong>Needed Supplies</strong> from the top navigation bar.</li>
+      <li>Find the list of supplies categorized under each job or client.</li>
+    </ol>
+    <img src="screenshots/supplies.png" alt="Supplies List Screenshot" />
+  </section>
+
+  <section id="faq">
+    <h2>FAQs & Troubleshooting</h2>
+    <h3>Why can't I see my schedule?</h3>
+    <p>Ensure you're connected to the internet. If the issue persists, contact your supervisor or IT support.</p>
+
+    <h3>What if I'm missing a required supply?</h3>
+    <p>Contact the supply manager or check if a colleague can lend you what you need.</p>
+
+    <h3>How do I report incorrect property conditions?</h3>
+    <p>Send a message through the internal communication tool or notify your team lead directly.</p>
+  </section>
+
+</body>
+</html>
