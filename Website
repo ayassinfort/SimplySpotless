@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simply Spotless Professional Cleaning Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+
+    header {
+      background-color: #00274d;
+      color: #a4e300;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #003366;
+    }
+
+    nav a {
+      color: #a4e300;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #a4e300;
+      color: #00274d;
+    }
+
+    .hero {
+      background: url('cleaning-hero.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2.5em;
+    }
+
+    .services {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .services h2 {
+      color: #00274d;
+      margin-bottom: 20px;
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .service {
+      background: #fff;
+      border: 2px solid #a4e300;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 20px rgba(0, 39, 77, 0.3);
+    }
+
+    .contact {
+      background-color: #003366;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea, .contact button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+    }
+
+    .contact button {
+      background-color: #a4e300;
+      color: #00274d;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #88c400;
+    }
+
+    footer {
+      background-color: #00274d;
+      color: #a4e300;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Simply Spotless Professional Cleaning Services</h1>
+  <p>Making Your Spaces Shine Brighter</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#contact">Request Service</a>
+</nav>
+
+<div class="hero">
+  Your Clean Home or Office Awaits!
+</div>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="service-list">
+    <div class="service">Move-In/Move-Out Cleaning</div>
+    <div class="service">Office Cleaning</div>
+    <div class="service">Commercial Cleaning</div>
+    <div class="service">Construction Cleaning</div>
+    <div class="service">Residential Cleaning</div>
+    <div class="service">Deep Cleaning</div>
+    <div class="service">Custom Cleaning Solutions</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Request a Cleaning Service</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Your Phone Number" required>
+    <textarea placeholder="Tell us about your cleaning needs..." rows="5" required></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Simply Spotless Professional Cleaning Services | Designed with care
+</footer>
+
+</body>
+</html>
