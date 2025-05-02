@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simply Spotless Database Help Manual</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header, nav, section, footer {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 1000px;
+      background: white;
+      border-radius: 8px;
+    }
+    nav a {
+      margin-right: 15px;
+      color: #0055a4;
+      text-decoration: none;
+    }
+    h1, h2, h3 {
+      color: #00274d;
+    }
+    img.diagram {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simply Spotless Database Help Manual</h1>
+    <p>This guide will help you understand how the Simply Spotless Professional Cleaning Services database works.</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Database Overview</a>
+    <a href="#clients">Clients</a>
+    <a href="#employees">Employees</a>
+    <a href="#services">Services</a>
+    <a href="#supplies">Supplies</a>
+    <a href="#timesheets">Employee Timesheets</a>
+    <a href="#invoices">Invoices</a>
+  </nav>
+
+  <section id="overview">
+    <h2>Database Overview</h2>
+    <p>The database structure supports core operations such as client and employee management, service scheduling, supply tracking, and financial documentation.</p>
+    <img class="diagram" src="/mnt/data/2025.02.08CapstoneProjectDiagram.drawio.png" alt="Database Diagram">
+  </section>
+
+  <section id="clients">
+    <h2>Clients</h2>
+    <p>Each client is stored in the <strong>Clients</strong> table with their contact information. They are linked to one or more properties in the <strong>Properties</strong> table.</p>
+    <ul>
+      <li><strong>Key fields:</strong> ClientID, FirstName, LastName, Email</li>
+      <li><a href="#properties">See how Clients relate to Properties</a></li>
+    </ul>
+  </section>
+
+  <section id="employees">
+    <h2>Employees</h2>
+    <p>The <strong>Employees</strong> table contains all personnel information including address, contact, and pay rate.</p>
+    <ul>
+      <li>Used for assigning cleaning jobs via the <strong>AssignedEmployees</strong> table</li>
+      <li><a href="#timesheets">Track time in EmployeeTimesheet</a></li>
+    </ul>
+  </section>
+
+  <section id="services">
+    <h2>Scheduled Services</h2>
+    <p>The <strong>ScheduledServices</strong> table manages cleaning appointments including timing, type, and linked property and employee data.</p>
+    <ul>
+      <li>Linked with <strong>Services</strong> for service type and price</li>
+      <li><a href="#supplies">Check Supplies Needed</a> for each scheduled service</li>
+    </ul>
+  </section>
+
+  <section id="supplies">
+    <h2>Supplies</h2>
+    <p>The <strong>Supplies</strong> and <strong>SuppliesNeeded</strong> tables track what materials are required per job and current inventory levels.</p>
+    <ul>
+      <li>SuppliesNeeded links to a ScheduledService to specify required materials</li>
+      <li>SuppliesPurchaseHistory logs all supply purchases</li>
+    </ul>
+  </section>
+
+  <section id="timesheets">
+    <h2>Employee Timesheets</h2>
+    <p>The <strong>EmployeeTimesheet</strong> table records work hours, breaks, and calculated totals for payroll purposes.</p>
+    <ul>
+      <li>Entries are linked to individual EmployeeIDs</li>
+      <li><a href="#employees">Back to Employee Details</a></li>
+    </ul>
+  </section>
+
+  <section id="invoices">
+    <h2>Invoices</h2>
+    <p>The <strong>Invoices</strong> table stores billing data linked to a Client and a specific ScheduledService.</p>
+    <ul>
+      <li>Includes status, total, and due amount</li>
+      <li>Helps track payments and outstanding balances</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Simply Spotless Professional Cleaning Services</p>
+  </footer>
+</body>
+</html>
