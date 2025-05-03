@@ -45,10 +45,8 @@
     <a href="#overview">Database Overview</a>
     <a href="#clients">Clients</a>
     <a href="#employees">Employees</a>
-    <a href="#services">Services</a>
-    <a href="#supplies">Supplies</a>
+    <a href="#properties">Properties</a>
     <a href="#timesheets">Employee Timesheets</a>
-    <a href="#invoices">Invoices</a>
   </nav>
 
   <section id="overview">
@@ -75,24 +73,6 @@
     </ul>
   </section>
 
-  <section id="services">
-    <h2>Scheduled Services</h2>
-    <p>The <strong>ScheduledServices</strong> table manages cleaning appointments including timing, type, and linked property and employee data.</p>
-    <ul>
-      <li>Linked with <strong>Services</strong> for service type and price</li>
-      <li><a href="#supplies">Check Supplies Needed</a> for each scheduled service</li>
-    </ul>
-  </section>
-
-  <section id="supplies">
-    <h2>Supplies</h2>
-    <p>The <strong>Supplies</strong> and <strong>SuppliesNeeded</strong> tables track what materials are required per job and current inventory levels.</p>
-    <ul>
-      <li>SuppliesNeeded links to a ScheduledService to specify required materials</li>
-      <li>SuppliesPurchaseHistory logs all supply purchases</li>
-    </ul>
-  </section>
-
   <section id="timesheets">
     <h2>Employee Timesheets</h2>
     <p>The <strong>EmployeeTimesheet</strong> table records work hours, breaks, and calculated totals for payroll purposes.</p>
@@ -102,12 +82,12 @@
     </ul>
   </section>
 
-  <section id="invoices">
-    <h2>Invoices</h2>
-    <p>The <strong>Invoices</strong> table stores billing data linked to a Client and a specific ScheduledService.</p>
+  <section id="properties">
+    <h2>Properties</h2>
+    <p>The <strong>Properties</strong> table records property type, address, and condition for calculating estimated cleaning time, supplies needed, and employees needed.</p>
     <ul>
-      <li>Includes status, total, and due amount</li>
-      <li>Helps track payments and outstanding balances</li>
+      <li>Entries are linked to individual PropertyIDs</li>
+      <li><a href="#clients">Back to Clients Details</a></li>
     </ul>
   </section>
 
